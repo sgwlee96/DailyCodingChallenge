@@ -8,7 +8,7 @@
 # and the last n elements are set to 0 and should be ignored. nums2 has a length of n.
 
 # Solution
-class Solution(object):
+class Solution(object): 
     def merge(self, nums1, m, nums2, n):
         """
         :type nums1: List[int]
@@ -30,6 +30,6 @@ class Solution(object):
         if m == 0: # when there is no left integers > 0, nums1 is sorted correctly without any 0 spaces in the list
             nums1[0:n] = nums2[0:n] # which means that all the remained integers in nums2 are smaller than nums1 
 
-
+    
 # Runtime: 29 ms, faster than 35.36% of Python online submissions for Merge Sorted Array.
 # Memory Usage: 13.5 MB, less than 46.66% of Python online submissions for Merge Sorted Array.
